@@ -6,7 +6,7 @@
 <title>Projects | Supara Portfolio</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="light-mode">
 <header>
   <nav class="navbar">
     <a href="index.html" class="logo">Supara</a>
@@ -16,24 +16,29 @@
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </div>
+    <button class="mode-toggle">🌙</button>
   </nav>
 </header>
 
 <section class="projects-section">
   <h1>Personal Projects</h1>
 
-  <article>
+  <div class="card interactive-card">
     <h2>Hospital Queue Booking Mobile Application (2024)</h2>
-    <ul>
-      <li>Designed high-fidelity wireframes and interactive prototypes</li>
-      <li>Developed front-end interface using HTML and CSS</li>
-      <li>Focused on clean and accessible UI</li>
-    </ul>
-  </article>
+    <p>Designed high-fidelity wireframes and interactive prototypes, developed front-end interface using HTML/CSS, focused on clean and accessible UI.</p>
+    <button class="modal-btn" data-modal="modal1">View Prototype</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://www.figma.com/proto/..." width="100%" height="500px"></iframe>
+    </div>
+  </div>
 
   <a href="index.html" class="btn-primary">Back to Home</a>
 </section>
-
 <script src="js/main.js"></script>
 </body>
 </html>
