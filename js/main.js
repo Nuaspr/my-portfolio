@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if(entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
+
   sections.forEach(sec => observer.observe(sec));
 });
