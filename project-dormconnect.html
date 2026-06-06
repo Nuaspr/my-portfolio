@@ -1,44 +1,1269 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DormConnect | Supara Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="DormConnect KMITL UX/UI case study by Supara Suwannatip."
+  >
+
+  <title>DormConnect Case Study | Supara Suwannatip</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body class="light-mode">
 
-<header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">Supara</a>
-    <div class="nav-links">
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-    <button class="mode-toggle">🌙</button>
-  </nav>
-</header>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
-<section class="projects-section">
-  <h1>DormConnect Project</h1>
-  <div class="card interactive-card">
-    <h2>Web Application for Dormitory Searching and Comparison</h2>
-    <p>Redesigned navigation and usability; Developed front-end using React, fully responsive.</p>
-    <button class="modal-btn" data-modal="modal-dormconnect">View Prototype</button>
+  <!-- Reading progress -->
+  <div
+    class="reading-progress"
+    aria-hidden="true"
+  >
+    <span id="reading-progress-bar"></span>
   </div>
 
-  <div id="modal-dormconnect" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <iframe src="https://www.figma.com/proto/..." width="100%" height="500px"></iframe>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="Supara portfolio home"
+      >
+        SUPARA<span>.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <a
+          href="projects.html"
+          class="active"
+          aria-current="page"
+        >
+          Projects
+        </a>
+
+        <a href="experience.html">Experience</a>
+
+        <a href="index.html#about">About</a>
+
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <button
+        class="mode-toggle"
+        type="button"
+        aria-label="Switch to dark theme"
+        title="Change color theme"
+      >
+        <span aria-hidden="true">🌙</span>
+      </button>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="case-hero reveal">
+
+      <div class="container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="projects.html">Projects</a>
+          <span aria-hidden="true">/</span>
+          <span>DormConnect KMITL</span>
+        </nav>
+
+        <div class="case-hero-grid">
+
+          <div class="case-hero-copy">
+
+            <div class="case-label-row">
+              <span class="eyebrow">UX/UI Case Study</span>
+              <span class="case-year">2025</span>
+            </div>
+
+            <h1>DormConnect KMITL</h1>
+
+            <p class="case-lead">
+              A responsive web application that helps KMITL students
+              discover, evaluate, and compare dormitories through one
+              centralized experience.
+            </p>
+
+            <div class="case-actions">
+
+              <a
+                class="btn-primary"
+                href="#process"
+              >
+                Explore the process
+              </a>
+
+              <button
+                class="btn-secondary modal-btn"
+                type="button"
+                data-modal="prototype-modal"
+              >
+                View prototype
+              </button>
+
+            </div>
+
+          </div>
+
+          <aside class="project-facts" aria-label="Project information">
+
+            <div class="project-fact">
+              <span>My role</span>
+              <strong>UX/UI Designer<br>Front-end Developer</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>Project type</span>
+              <strong>Academic web application</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>Tools</span>
+              <strong>Figma, FigJam, React</strong>
+            </div>
+
+            <div class="project-fact">
+              <span>Platform</span>
+              <strong>Responsive Web</strong>
+            </div>
+
+          </aside>
+
+        </div>
+
+        <!--
+          เปลี่ยนชื่อไฟล์ตามภาพจริงของน้อง
+          assets/img/dormconnect-cover.png
+        -->
+        <figure
+          class="case-visual case-cover"
+          data-placeholder="Add DormConnect cover image"
+        >
+          <img
+            src="assets/img/dormconnect-cover.png"
+            alt="DormConnect desktop and mobile interface preview"
+            loading="eager"
+            onerror="this.hidden=true"
+          >
+        </figure>
+
+      </div>
+
+    </section>
+
+    <!-- Sticky case navigation -->
+    <nav
+      class="case-navigation"
+      aria-label="Case study sections"
+    >
+      <div class="container case-navigation-inner">
+
+        <a href="#overview" class="case-nav-link active">
+          Overview
+        </a>
+
+        <a href="#discover" class="case-nav-link">
+          Discover
+        </a>
+
+        <a href="#define" class="case-nav-link">
+          Define
+        </a>
+
+        <a href="#ideate" class="case-nav-link">
+          Ideate
+        </a>
+
+        <a href="#design" class="case-nav-link">
+          Design
+        </a>
+
+        <a href="#test" class="case-nav-link">
+          Test
+        </a>
+
+        <a href="#outcome" class="case-nav-link">
+          Outcome
+        </a>
+
+      </div>
+    </nav>
+
+    <!-- Overview -->
+    <section
+      id="overview"
+      class="case-section reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="eyebrow">Project overview</p>
+            <h2>Understanding the challenge</h2>
+          </div>
+
+        </div>
+
+        <div class="two-column-layout">
+
+          <div class="case-copy">
+
+            <h3>The problem</h3>
+
+            <p>
+              Students looking for accommodation around KMITL often
+              rely on fragmented information from social media,
+              recommendations, and separate dormitory pages.
+            </p>
+
+            <p>
+              Information can be incomplete or difficult to compare,
+              especially when students need to consider price,
+              facilities, location, travel distance, and reviews at
+              the same time.
+            </p>
+
+          </div>
+
+          <div class="highlight-card">
+
+            <p class="highlight-label">Design challenge</p>
+
+            <blockquote>
+              How might we help students confidently find and compare
+              suitable dormitories without switching between multiple
+              information sources?
+            </blockquote>
+
+          </div>
+
+        </div>
+
+        <div class="challenge-grid">
+
+          <article class="challenge-card">
+            <span class="challenge-icon" aria-hidden="true">01</span>
+            <h3>Scattered information</h3>
+            <p>
+              Students must search through several channels before
+              finding enough information to make a decision.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-icon" aria-hidden="true">02</span>
+            <h3>Difficult comparison</h3>
+            <p>
+              Prices, facilities, room types, and locations are
+              presented inconsistently.
+            </p>
+          </article>
+
+          <article class="challenge-card">
+            <span class="challenge-icon" aria-hidden="true">03</span>
+            <h3>Low decision confidence</h3>
+            <p>
+              Limited visual information and unclear details make it
+              difficult for students to shortlist options.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Discover -->
+    <section
+      id="discover"
+      class="case-section case-section-soft reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="eyebrow">Discover</p>
+            <h2>Learning from target users</h2>
+          </div>
+
+        </div>
+
+        <div class="two-column-layout">
+
+          <div class="case-copy">
+
+            <h3>Research objective</h3>
+
+            <p>
+              I conducted a user survey to understand how students
+              currently search for dormitories, which information
+              affects their decisions, and which parts of the existing
+              search process cause confusion.
+            </p>
+
+            <div class="research-meta">
+
+              <div>
+                <span>Method</span>
+                <strong>Online user survey</strong>
+              </div>
+
+              <div>
+                <span>Participants</span>
+
+                <!-- เปลี่ยนเป็นจำนวนจริง -->
+                <strong>[Add actual number]</strong>
+              </div>
+
+              <div>
+                <span>Target users</span>
+                <strong>KMITL students</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div>
+
+            <h3>Research questions</h3>
+
+            <ul class="check-list">
+              <li>
+                Where do students currently search for dormitory
+                information?
+              </li>
+
+              <li>
+                Which factors are most important when choosing a
+                dormitory?
+              </li>
+
+              <li>
+                What information is often missing or difficult to
+                verify?
+              </li>
+
+              <li>
+                What makes comparing multiple dormitories difficult?
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <figure
+          class="case-visual"
+          data-placeholder="Add survey result or research summary"
+        >
+          <img
+            src="assets/img/dormconnect-research.png"
+            alt="Summary of DormConnect user research findings"
+            loading="lazy"
+            onerror="this.hidden=true"
+          >
+        </figure>
+
+        <div class="insight-grid">
+
+          <article class="insight-card">
+            <span>Insight 01</span>
+            <h3>Students need one reliable source</h3>
+            <p>
+              Switching between multiple sources increases search
+              time and makes information harder to verify.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <span>Insight 02</span>
+            <h3>Location must be easy to understand</h3>
+            <p>
+              Students need clear distance and location information
+              to assess daily travel convenience.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <span>Insight 03</span>
+            <h3>Comparison supports decision-making</h3>
+            <p>
+              Users need to compare essential information without
+              repeatedly opening different pages.
+            </p>
+          </article>
+
+          <article class="insight-card">
+            <span>Insight 04</span>
+            <h3>Filters should reflect real priorities</h3>
+            <p>
+              Price, facilities, room type, and location are important
+              factors when narrowing down options.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Define -->
+    <section
+      id="define"
+      class="case-section reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="eyebrow">Define</p>
+            <h2>Turning findings into a focused problem</h2>
+          </div>
+
+        </div>
+
+        <div class="persona-card">
+
+          <div class="persona-avatar" aria-hidden="true">
+            KS
+          </div>
+
+          <div class="persona-main">
+
+            <p class="eyebrow">Primary persona</p>
+
+            <h3>KMITL student looking for accommodation</h3>
+
+            <p>
+              A student who needs an affordable and convenient
+              dormitory near the university but has limited time to
+              search and compare information across multiple sources.
+            </p>
+
+          </div>
+
+          <div class="persona-details">
+
+            <div>
+              <span>Goal</span>
+              <p>
+                Find a suitable dormitory that matches budget and
+                lifestyle needs.
+              </p>
+            </div>
+
+            <div>
+              <span>Frustration</span>
+              <p>
+                Incomplete information and inconsistent presentation
+                across platforms.
+              </p>
+            </div>
+
+            <div>
+              <span>Need</span>
+              <p>
+                A quick and trustworthy way to shortlist and compare
+                options.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="problem-statement">
+
+          <p class="eyebrow">Problem statement</p>
+
+          <p>
+            KMITL students need a centralized way to discover and
+            compare nearby dormitories because fragmented information
+            makes the current decision-making process slow, confusing,
+            and unreliable.
+          </p>
+
+        </div>
+
+        <div class="journey-wrapper">
+
+          <h3>Current user journey</h3>
+
+          <div class="journey-table" role="table">
+
+            <div class="journey-row journey-header" role="row">
+              <div role="columnheader">Stage</div>
+              <div role="columnheader">User action</div>
+              <div role="columnheader">Pain point</div>
+              <div role="columnheader">Opportunity</div>
+            </div>
+
+            <div class="journey-row" role="row">
+              <div role="cell">Discover</div>
+              <div role="cell">
+                Search social media and online listings
+              </div>
+              <div role="cell">
+                Information is scattered
+              </div>
+              <div role="cell">
+                Centralize relevant listings
+              </div>
+            </div>
+
+            <div class="journey-row" role="row">
+              <div role="cell">Evaluate</div>
+              <div role="cell">
+                Open several pages and record details
+              </div>
+              <div role="cell">
+                Details are inconsistent
+              </div>
+              <div role="cell">
+                Standardize dormitory information
+              </div>
+            </div>
+
+            <div class="journey-row" role="row">
+              <div role="cell">Compare</div>
+              <div role="cell">
+                Compare price and facilities manually
+              </div>
+              <div role="cell">
+                High cognitive effort
+              </div>
+              <div role="cell">
+                Provide side-by-side comparison
+              </div>
+            </div>
+
+            <div class="journey-row" role="row">
+              <div role="cell">Decide</div>
+              <div role="cell">
+                Contact or visit shortlisted dormitories
+              </div>
+              <div role="cell">
+                Low confidence in the final choice
+              </div>
+              <div role="cell">
+                Show clear location and reviews
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Ideate -->
+    <section
+      id="ideate"
+      class="case-section case-section-soft reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">04</span>
+
+          <div>
+            <p class="eyebrow">Ideate</p>
+            <h2>Structuring the experience</h2>
+          </div>
+
+        </div>
+
+        <p class="section-intro">
+          The solution was organized around the core tasks students
+          need to complete: discover relevant dormitories, understand
+          key information, save options, and compare shortlisted
+          properties.
+        </p>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span aria-hidden="true">⌕</span>
+            <h3>Search and filters</h3>
+            <p>
+              Narrow results by price, location, facilities, and room
+              preferences.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span aria-hidden="true">⌖</span>
+            <h3>Location information</h3>
+            <p>
+              Help students understand proximity and travel
+              convenience.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span aria-hidden="true">♡</span>
+            <h3>Save options</h3>
+            <p>
+              Let students build a shortlist without repeating the
+              search process.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span aria-hidden="true">⇄</span>
+            <h3>Compare dormitories</h3>
+            <p>
+              Present essential information side by side to support
+              confident decisions.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="flow-card">
+
+          <p class="eyebrow">Primary user flow</p>
+
+          <div class="flow-steps">
+
+            <span>Open platform</span>
+            <i aria-hidden="true">→</i>
+
+            <span>Search or filter</span>
+            <i aria-hidden="true">→</i>
+
+            <span>View details</span>
+            <i aria-hidden="true">→</i>
+
+            <span>Save options</span>
+            <i aria-hidden="true">→</i>
+
+            <span>Compare</span>
+            <i aria-hidden="true">→</i>
+
+            <span>Make a decision</span>
+
+          </div>
+
+        </div>
+
+        <figure
+          class="case-visual"
+          data-placeholder="Add sitemap or user flow"
+        >
+          <img
+            src="assets/img/dormconnect-userflow.png"
+            alt="DormConnect sitemap and primary user flow"
+            loading="lazy"
+            onerror="this.hidden=true"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Design -->
+    <section
+      id="design"
+      class="case-section reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">05</span>
+
+          <div>
+            <p class="eyebrow">Design</p>
+            <h2>From wireframes to responsive UI</h2>
+          </div>
+
+        </div>
+
+        <div class="design-stage">
+
+          <div class="design-stage-copy">
+
+            <span class="stage-label">Low-fidelity design</span>
+
+            <h3>Validating hierarchy before visual styling</h3>
+
+            <p>
+              I used wireframes to define content hierarchy,
+              navigation, search interactions, dormitory details, and
+              the comparison experience before moving into the
+              high-fidelity interface.
+            </p>
+
+          </div>
+
+          <figure
+            class="case-visual"
+            data-placeholder="Add low-fidelity wireframes"
+          >
+            <img
+              src="assets/img/dormconnect-wireframe.png"
+              alt="Low-fidelity wireframes for DormConnect"
+              loading="lazy"
+              onerror="this.hidden=true"
+            >
+          </figure>
+
+        </div>
+
+        <div class="design-principles">
+
+          <article>
+            <span>01</span>
+            <h3>Clear hierarchy</h3>
+            <p>
+              Important decision-making information appears before
+              secondary details.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Consistent patterns</h3>
+            <p>
+              Cards, filters, buttons, and states use predictable
+              visual and interaction patterns.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Accessible interface</h3>
+            <p>
+              Readable typography, clear contrast, visible states, and
+              understandable labels support usability.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Responsive behavior</h3>
+            <p>
+              Layouts and components adapt to desktop, tablet, and
+              mobile screens.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="design-stage">
+
+          <div class="design-stage-copy">
+
+            <span class="stage-label">High-fidelity design</span>
+
+            <h3>Creating a calm and comparison-friendly interface</h3>
+
+            <p>
+              The final interface emphasizes scannable information,
+              clear calls to action, and consistent presentation
+              across dormitory listings and detail pages.
+            </p>
+
+          </div>
+
+          <figure
+            class="case-visual"
+            data-placeholder="Add final high-fidelity screens"
+          >
+            <img
+              src="assets/img/dormconnect-ui.png"
+              alt="High-fidelity DormConnect user interface"
+              loading="lazy"
+              onerror="this.hidden=true"
+            >
+          </figure>
+
+        </div>
+
+        <div class="responsive-showcase">
+
+          <div>
+            <p class="eyebrow">Responsive design</p>
+            <h3>Designed for different devices</h3>
+            <p>
+              The React front-end was developed to provide a seamless
+              experience across desktop and smaller screens.
+            </p>
+          </div>
+
+          <figure
+            class="case-visual"
+            data-placeholder="Add responsive desktop and mobile screens"
+          >
+            <img
+              src="assets/img/dormconnect-responsive.png"
+              alt="DormConnect responsive desktop and mobile layouts"
+              loading="lazy"
+              onerror="this.hidden=true"
+            >
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Test -->
+    <section
+      id="test"
+      class="case-section case-section-soft reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">06</span>
+
+          <div>
+            <p class="eyebrow">Test and iterate</p>
+            <h2>Improving the experience through feedback</h2>
+          </div>
+
+        </div>
+
+        <div class="two-column-layout">
+
+          <div class="case-copy">
+
+            <h3>Testing goals</h3>
+
+            <ul class="check-list">
+              <li>
+                Determine whether users can find suitable dormitories.
+              </li>
+
+              <li>
+                Evaluate whether filters are understandable.
+              </li>
+
+              <li>
+                Test whether users can save and compare options.
+              </li>
+
+              <li>
+                Identify unclear labels, actions, and information.
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="research-meta testing-meta">
+
+            <div>
+              <span>Method</span>
+              <strong>Usability testing</strong>
+            </div>
+
+            <div>
+              <span>Participants</span>
+
+              <!-- เปลี่ยนเป็นจำนวนจริง -->
+              <strong>[Add actual number]</strong>
+            </div>
+
+            <div>
+              <span>Format</span>
+              <strong>[Remote / In person]</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="iteration-list">
+
+          <article class="iteration-card">
+
+            <div class="iteration-before">
+              <span>Before</span>
+              <h3>Comparison action lacked visibility</h3>
+              <p>
+                Users could select dormitories but were not always
+                sure how to continue to the comparison page.
+              </p>
+            </div>
+
+            <div class="iteration-arrow" aria-hidden="true">→</div>
+
+            <div class="iteration-after">
+              <span>After</span>
+              <h3>Added persistent comparison feedback</h3>
+              <p>
+                The revised design provides visible selection states
+                and a clearer comparison call to action.
+              </p>
+            </div>
+
+          </article>
+
+          <article class="iteration-card">
+
+            <div class="iteration-before">
+              <span>Before</span>
+              <h3>Filters required too much effort</h3>
+              <p>
+                Important filter options were not sufficiently
+                prioritized.
+              </p>
+            </div>
+
+            <div class="iteration-arrow" aria-hidden="true">→</div>
+
+            <div class="iteration-after">
+              <span>After</span>
+              <h3>Reorganized filters around student priorities</h3>
+              <p>
+                Price, location, room type, and facilities became
+                easier to scan and adjust.
+              </p>
+            </div>
+
+          </article>
+
+          <article class="iteration-card">
+
+            <div class="iteration-before">
+              <span>Before</span>
+              <h3>Location details were easy to overlook</h3>
+              <p>
+                Users needed clearer information about proximity and
+                travel convenience.
+              </p>
+            </div>
+
+            <div class="iteration-arrow" aria-hidden="true">→</div>
+
+            <div class="iteration-after">
+              <span>After</span>
+              <h3>Improved location visibility</h3>
+              <p>
+                Distance and location information were placed closer
+                to key dormitory details.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+        <figure
+          class="case-visual"
+          data-placeholder="Add usability testing or iteration screens"
+        >
+          <img
+            src="assets/img/dormconnect-testing.png"
+            alt="DormConnect usability testing insights and design iterations"
+            loading="lazy"
+            onerror="this.hidden=true"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Outcome -->
+    <section
+      id="outcome"
+      class="case-section reveal"
+      data-case-section
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">07</span>
+
+          <div>
+            <p class="eyebrow">Outcome</p>
+            <h2>What the project achieved</h2>
+          </div>
+
+        </div>
+
+        <div class="outcome-grid">
+
+          <article class="outcome-card">
+            <strong>01</strong>
+            <h3>Centralized discovery</h3>
+            <p>
+              The solution brings important dormitory information into
+              one structured experience.
+            </p>
+          </article>
+
+          <article class="outcome-card">
+            <strong>02</strong>
+            <h3>Easier comparison</h3>
+            <p>
+              Standardized information helps users evaluate options
+              with less effort.
+            </p>
+          </article>
+
+          <article class="outcome-card">
+            <strong>03</strong>
+            <h3>Responsive implementation</h3>
+            <p>
+              The React interface was developed to support a seamless
+              experience across devices.
+            </p>
+          </article>
+
+        </div>
+
+        <!--
+          อย่าใส่ตัวเลขที่ไม่มีข้อมูลจริง
+          เปลี่ยนส่วนนี้เมื่อมีผลทดสอบจริง
+        -->
+        <div class="metric-placeholder">
+
+          <p class="eyebrow">Add verified results</p>
+
+          <h3>
+            Replace these placeholders with real usability results.
+          </h3>
+
+          <div class="metric-grid">
+
+            <div>
+              <strong>--%</strong>
+              <span>Task success rate</span>
+            </div>
+
+            <div>
+              <strong>-- min</strong>
+              <span>Average task time</span>
+            </div>
+
+            <div>
+              <strong>-- / 5</strong>
+              <span>User satisfaction</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="reflection-card">
+
+          <p class="eyebrow">Reflection</p>
+
+          <h3>What I learned</h3>
+
+          <p>
+            This project strengthened my ability to connect user
+            research with interface decisions and front-end
+            implementation. It also showed me the importance of
+            organizing complex information around the user's primary
+            decision-making needs.
+          </p>
+
+          <h3>What I would improve next</h3>
+
+          <ul class="check-list">
+            <li>
+              Conduct additional usability testing with a larger
+              participant group.
+            </li>
+
+            <li>
+              Validate the usefulness and credibility of user reviews.
+            </li>
+
+            <li>
+              Improve map-based exploration and travel-time
+              information.
+            </li>
+
+            <li>
+              Add accessibility testing with keyboard and screen-reader
+              users.
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Next project -->
+    <section class="next-project reveal">
+
+      <div class="container next-project-inner">
+
+        <div>
+          <p class="eyebrow">Next case study</p>
+          <h2>Learning Management System</h2>
+        </div>
+
+        <a
+          href="project-lms.html"
+          class="next-project-link"
+          aria-label="View Learning Management System case study"
+        >
+          View project
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>Supara Suwannatip</strong>
+        <p>UX/UI Designer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:Suparanua15082546@gmail.com">
+          Email
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="assets/pdf/Resume.pdf" target="_blank">
+          Resume
+        </a>
+      </div>
+
+      <p>
+        © <span data-current-year></span> Supara Suwannatip
+      </p>
+
     </div>
+
+  </footer>
+
+  <!-- Prototype modal -->
+  <div
+    id="prototype-modal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="prototype-modal-title"
+    aria-hidden="true"
+  >
+
+    <div class="modal-content case-modal-content">
+
+      <button
+        class="close"
+        type="button"
+        aria-label="Close prototype"
+      >
+        ×
+      </button>
+
+      <div class="modal-heading">
+        <p class="eyebrow">Interactive prototype</p>
+        <h2 id="prototype-modal-title">
+          DormConnect KMITL
+        </h2>
+      </div>
+
+      <!--
+        แทนที่ URL ด้านล่างด้วยลิงก์ Embed จาก Figma:
+        Figma > Share > Get embed code
+      -->
+      <div class="prototype-placeholder">
+
+        <p>
+          Add the Figma prototype embed URL here.
+        </p>
+
+        <code>
+          https://www.figma.com/embed?embed_host=share&amp;url=YOUR_FIGMA_URL
+        </code>
+
+      </div>
+
+      <!--
+      เปิดใช้ iframe นี้หลังใส่ลิงก์จริง
+
+      <iframe
+        title="DormConnect interactive Figma prototype"
+        src="https://www.figma.com/embed?embed_host=share&amp;url=YOUR_FIGMA_URL"
+        allowfullscreen
+      ></iframe>
+      -->
+
+    </div>
+
   </div>
 
-  <a href="projects.html" class="btn-primary">Back to Projects</a>
-</section>
+  <script src="js/main.js?v=4"></script>
 
-<script src="js/main.js"></script>
 </body>
 </html>
+```
