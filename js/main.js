@@ -1,5 +1,9 @@
-// Fade-in sections
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Debug: ตรวจสอบว่า JS ถูกโหลด
+  console.log('JS Loaded');
+
+  // Fade-in sections
   const sections = document.querySelectorAll('section');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -11,8 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Light/Dark Mode Toggle
   const toggle = document.querySelector('.mode-toggle');
   toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    document.body.classList.toggle('light-mode');
+    const body = document.body;
+    if(body.classList.contains('dark-mode')) {
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+      toggle.textContent = '🌙';
+    } else {
+      body.classList.remove('light-mode');
+      body.classList.add('dark-mode');
+      toggle.textContent = '☀️';
+    }
+    console.log('Theme toggled:', body.className);
   });
 
   // Modal
@@ -23,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   modalBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const modal = document.getElementById(btn.dataset.modal);
-      modal.style.display = 'block';
+      if(modal) modal.style.display = 'block';
     });
   });
 
@@ -38,4 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
       if(event.target == modal) modal.style.display = 'none';
     });
   };
+
 });
